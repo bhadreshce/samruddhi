@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button onclick="changeColor()">onclick </button> -->
+
+    <!-- <button onclick="changeColor()">onclick </button>
+    <button onclick="changeC()">onclick </button> -->
+    <!-- <button onclick="changeColor(event)">onclick </button> -->
+    <!-- <button onmouseenter="alertT(event)"> click me </button> -->
+    <!-- <button onmouseleave="changecolor(event)" onmouseenter="entercolor(event)"> Button </button> -->
+
+    <!-- <input type="text" onkeypress="addText(event)"> -->
+    <!-- <input type="text" onkeydown="addText(event)"> -->
+    <!-- <input type="text" onkeyup="addText(event)"> -->
+
+    <div id="inpt"> </div>
+    <script>
+        function addText(e) {
+            document.getElementById('inpt').innerHTML = e.target.value
+
+        }
+        // function changecolor(e) {
+        //     e.target.style.backgroundColor = 'red'
+        // }
+        // function entercolor(e) {
+        //     e.target.style.backgroundColor = 'green'
+        // }
+
+        let zoo = {
+            name: "Amazing Zoo",
+            location: "Melbourne, Australia",
+            animals: [
+                {
+                    species: "Lion",
+                    favoriteTreat: "🥩",
+                },
+                {
+                    species: "Panda",
+                    favoriteTreat: "🎋",
+                },
+            ],
+        };
+
+        let shallowCopyZoo = { ...zoo };
+        shallowCopyZoo.animals[0].favoriteTreat = "🍖";
+        shallowCopyZoo.name = 'dddddd'
+        console.log(zoo);
+        // "🍖", not "🥩"
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+</html>
